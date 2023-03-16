@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search repositories</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="search">
+        <div class="search__text-wrapper">
+          <input
+            name="text"
+            class="search__text"
+            type="text"
+            placeholder="Введите наименовaние репозитория"
+          />
+        </div>
+        <input
+          name="submit"
+          class="search__submit"
+          type="submit"
+          value="Поиск"
+        />
+      </form>
+
+      <div id="repositories" class="repositories"></div>
+    </div>
+  </body>
+</html>

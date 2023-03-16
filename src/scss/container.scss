@@ -1,0 +1,9 @@
+$wrapper-padding: 15px;
+$wrapper-size: 1366px;
+
+.container {
+  max-width: $wrapper-size + $wrapper-padding * 2;
+  padding-left: $wrapper-padding;
+  padding-right: $wrapper-padding;
+  margin: 15px auto;
+}

@@ -1,0 +1,69 @@
+@use './fonts.scss';
+
+.search {
+  padding: 20px;
+  font-family: fonts.$Roboto;
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  gap: 10px;
+
+  &__text-wrapper {
+    position: relative;
+    flex: 1 1;
+  }
+
+  &__text,
+  &__submit {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    &:focus {
+      box-shadow: 0 0 2px 2px rgb(150, 188, 242);
+    }
+  }
+
+  &__submit {
+    background-color: rgb(73, 73, 255);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      background-color: rgb(37, 56, 255);
+    }
+  }
+
+  &__error-message {
+    position: absolute;
+    left: 0;
+    bottom: -1.3em;
+    font-size: 0.8rem;
+    color: rgb(255, 57, 57);
+  }
+}
+
+@media (max-width: 460px) {
+  .search {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .search {
+    &__text {
+      font-size: 0.8rem;
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.error {
+  border: 2px solid rgb(255, 57, 57);
+
+  &:focus {
+    box-shadow: 0 0 2px 2px rgb(255, 57, 57);
+  }
+}
